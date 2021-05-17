@@ -1,0 +1,85 @@
+@import url("./_variables.css");
+@import url("./_global.css");
+
+.container {
+	width: 75%;
+	max-width: 1080px;
+	min-width: 320px;
+	background: var(--card-bg);
+	display: flex;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.container > div {
+	width: 50%;
+}
+
+.blank {
+	width: 50%;
+	background: linear-gradient(rgba(179, 56, 255, 0.6), rgba(179, 56, 255, 0.6)),
+		url("./../images/image-header-mobile.jpg") no-repeat top;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+
+.content {
+	padding: 70px;
+}
+
+.stat-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.stat {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 110px;
+	font-family: var(--main-font);
+}
+
+.stat-head {
+	font-size: 12px;
+	font-weight: 400;
+	margin: 5px auto;
+}
+
+.accent {
+	color: var(--accent);
+}
+
+@media (max-width: 980px) {
+	.container {
+		flex-direction: column-reverse;
+	}
+
+	.container .content {
+		padding: 25px 35px 0;
+	}
+
+	.container > div {
+		width: 100%;
+		height: auto;
+	}
+
+	.container .blank {
+		background: linear-gradient(rgba(179, 56, 255, 0.6), rgba(179, 56, 255, 0.6)),
+			url("./../images/image-header-mobile.jpg") no-repeat top;
+		background-size: cover;
+		height: 230px;
+	}
+
+	.attribution {
+		bottom: 2%;
+	}
+
+	.stat-wrapper {
+		flex-direction: column;
+	}
+
+	.stat {
+		flex-basis: 75px;
+	}
+}
