@@ -1,5 +1,66 @@
-@import url("./_variables.css");
-@import url("./_global.css");
+:root {
+	/* Background Colors */
+	--main-bg: hsl(233, 47%, 7%);
+	--card-bg: hsl(244, 38%, 16%);
+	--accent: hsl(277, 64%, 61%);
+
+	/* Text Colors */
+	--text-main: hsl(0, 0%, 100%);
+	--text-para: hsla(0, 0%, 100%, 0.75);
+	--stat-heads: hsla(0, 0%, 100%, 0.6);
+
+	/* Font Properties */
+	--main-font: "Inter", sans-serif;
+	--secondary-font: "Lexend Deca", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-size: 15px;
+	font-family: var(--main-font);
+	font-weight: 400;
+	background: var(--main-bg);
+	color: var(--text-main);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 26px;
+	margin-bottom: 24px;
+	font-family: var(--secondary-font);
+	line-height: 1;
+}
+
+p {
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
 
 .container {
 	width: 75%;

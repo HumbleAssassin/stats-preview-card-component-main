@@ -1,15 +1,1 @@
-:root {
-	/* Background Colors */
-	--main-bg: hsl(233, 47%, 7%);
-	--card-bg: hsl(244, 38%, 16%);
-	--accent: hsl(277, 64%, 61%);
 
-	/* Text Colors */
-	--text-main: hsl(0, 0%, 100%);
-	--text-para: hsla(0, 0%, 100%, 0.75);
-	--stat-heads: hsla(0, 0%, 100%, 0.6);
-
-	/* Font Properties */
-	--main-font: "Inter", sans-serif;
-	--secondary-font: "Lexend Deca", sans-serif;
-}
